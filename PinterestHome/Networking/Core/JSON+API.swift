@@ -78,10 +78,10 @@ extension JSONValue {
     }
 }
 
-extension String: JSONValue {}
-extension IntegerLiteralType: JSONValue {}
-extension FloatLiteralType: JSONValue {}
-extension BooleanLiteralType: JSONValue {}
+//extension String: JSONValue {}
+//extension IntegerLiteralType: JSONValue {}
+//extension FloatLiteralType: JSONValue {}
+//extension BooleanLiteralType: JSONValue {}
 extension JSONArray: JSONValue {}
 extension JSONObject: JSONValue {}
 

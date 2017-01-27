@@ -66,10 +66,14 @@ struct OnMemoryCache: MemoryCache {
     public var currentSize: Int = 0
     private var cacheDictionary: [String : CacheItemType] = [:]
     private var allCachedItems : [CacheItemType] {
-        return cacheDictionary.flatMap({$0 as? CacheItemType})
+        var values = [CacheItemType]()
+        for (key, value) in cacheDictionary {
+            values.append(value)
+        }
+        return values
     }
     
-    private init(maxSizeInKB: Int) {
+    init(maxSizeInKB: Int) {
         self.maxSizeKB = maxSizeInKB
     }
     
@@ -91,10 +95,10 @@ struct OnMemoryCache: MemoryCache {
                 
             } else {
                 // Save in memory cache
-                currentSize += item.sizeInKB
-                cacheDictionary[item.key] = item
                 debugPrint("Current Cache Size in KB = \(currentSize)")
             }
+            currentSize += item.sizeInKB
+            cacheDictionary[item.key] = item
         }
     }
     
@@ -115,6 +119,7 @@ struct OnMemoryCache: MemoryCache {
         for item in sortedItems {
             memoryPurged += item.sizeInKB
             self.cacheDictionary[item.key] = nil
+            currentSize -= item.sizeInKB
             if memoryPurged > minMemoryToPurge { break }
         }
     }
