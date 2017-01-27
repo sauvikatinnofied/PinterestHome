@@ -56,4 +56,50 @@ class PinterRestPostTest: XCTestCase {
         }
     }
     
+    func testCategotyValidationTest() {
+        let validDic: [String : Any] = [
+            "id":2,
+            "title":"Buildings",
+            "photo_count":19563,
+            "links":[
+                "self":"https://api.unsplash.com/categories/2",
+                "photos":"https://api.unsplash.com/categories/2/photos"            
+            ]
+        ]
+        
+        let validCategory = Category(jsonDictionary: validDic)
+        XCTAssertNotNil(validCategory, "Validation error in Category")
+        
+        
+        let invalidDic: [String : Any] = [
+            "title":"Buildings",
+            "photo_count":19563,
+            "links":[
+                "self":"https://api.unsplash.com/categories/2"
+                
+            ]
+        ]
+        // id, links.photos missing
+        
+        let invalidCategory = Category(jsonDictionary: invalidDic)
+        XCTAssertNil(invalidCategory, "Validation error in Category")
+        
+        
+        
+        let invalidURLDic: [String : Any] = [
+            "id":2,
+            "title":"Buildings",
+            "photo_count":19563,
+            "links":[
+                "self":"hs://api.unsplash.com/categories/2",
+                "photos":"https://api.unsplash.com/categories/2/photos"
+                
+            ]
+        ] // Invalid URL self
+        
+        let invalidURLCategory = Category(jsonDictionary: invalidURLDic)
+         XCTAssertNil(invalidURLCategory, "URL Validation error in Category")
+
+    }
+    
 }

@@ -37,11 +37,18 @@ struct PinterestPost: JSONConvertible, JSONArrayConvertible {
         let likes = jsonDictionary?["likes"] as? Int,
         let likedByUser = jsonDictionary?["liked_by_user"] as? Bool,
             
-        let user = jsonDictionary?["user"] as? JSONDictionary,
+        let userDic = jsonDictionary?["user"] as? JSONDictionary,
+        let user = User(jsonDictionary: userDic),
+            
         let currentUserCollection = jsonDictionary?["current_user_collections"] as? [String],
-        let urls = jsonDictionary?["urls"] as? JSONDictionary,
+            
+        let urlsDic = jsonDictionary?["urls"] as? JSONDictionary,
+        let urls = PostURLs(jsonDictionary: urlsDic),
+            
         let categories = jsonDictionary?["categories"] as? [JSONDictionary],
-        let links = jsonDictionary?["links"] as? JSONDictionary else {
+            
+        let linksDic = jsonDictionary?["links"] as? JSONDictionary,
+        let links = PostLinks(jsonDictionary: linksDic) else {
                 return nil
         }
         self.id = id
@@ -51,13 +58,13 @@ struct PinterestPost: JSONConvertible, JSONArrayConvertible {
         self.color = color
         self.likes = likes
         self.likedByUser = likedByUser
-        self.user = User(jsonDictionary: user)!
+        self.user = user
         self.currentUserCollection = currentUserCollection
-        self.urls = PostURLs(jsonDictionary: urls)!
+        self.urls = urls
         self.categories = categories.flatMap({ (dic) -> Category? in
             return Category(jsonDictionary: dic)
         })
-        self.links = PostLinks(jsonDictionary: links)!
+        self.links = links
     
     }
 }
@@ -74,9 +81,12 @@ struct CategoryLink : JSONConvertible {
     
     public init?(jsonDictionary: JSONDictionary?) {
         guard let selfLink = jsonDictionary?["self"] as? String,
-        let photos = jsonDictionary?["photos"] as? String else {
+        selfLink.isHttpURL,
+        let photos = jsonDictionary?["photos"] as? String,
+        photos.isHttpURL else {
             return nil
         }
+        
         self.selfLink = selfLink
         self.photos = photos
     }
@@ -93,13 +103,15 @@ struct Category : JSONConvertible {
         guard let id = jsonDictionary?["id"] as? Int,
         let title = jsonDictionary?["title"] as? String,
         let photoCount = jsonDictionary?["photo_count"] as? Int,
-        let links = jsonDictionary?["links"] as? JSONDictionary else {
+        let linksDic = jsonDictionary?["links"] as? JSONDictionary,
+        let links = CategoryLink(jsonDictionary: linksDic) else {
                 return nil
         }
         self.id = id
         self.title = title
         self.photoCount = photoCount
-        self.links = CategoryLink(jsonDictionary: links)
+        self.links = links
+        
     }
 }
 struct PostLinks : JSONConvertible {
@@ -110,7 +122,10 @@ struct PostLinks : JSONConvertible {
     public init?(jsonDictionary: JSONDictionary?) {
         guard let selfLink = jsonDictionary?["self"] as? String,
         let html = jsonDictionary?["html"] as? String,
-        let download = jsonDictionary?["download"] as? String else {
+        let download = jsonDictionary?["download"] as? String,
+        selfLink.isHttpURL,
+        html.isHttpURL,
+        download.isHttpURL else {
             return nil
         }
         self.selfLink = selfLink
@@ -132,7 +147,12 @@ struct PostURLs: JSONConvertible {
         let full = jsonDictionary?["full"] as? String,
         let regular = jsonDictionary?["regular"] as? String,
         let small = jsonDictionary?["small"] as? String,
-        let thumb = jsonDictionary?["thumb"] as? String else {
+        let thumb = jsonDictionary?["thumb"] as? String,
+        raw.isHttpURL,
+        full.isHttpURL,
+        regular.isHttpURL,
+        small.isHttpURL,
+        thumb.isHttpURL else {
                 return nil
         }
         self.raw = raw
@@ -153,8 +173,11 @@ struct ProfileImage : JSONConvertible {
     
     public init?(jsonDictionary: JSONDictionary?) {
         guard let small = jsonDictionary?["small"] as? String,
-            let medium = jsonDictionary?["medium"] as? String,
-            let large = jsonDictionary?["large"] as? String else {
+        let medium = jsonDictionary?["medium"] as? String,
+        let large = jsonDictionary?["large"] as? String,
+        small.isHttpURL,
+        medium.isHttpURL,
+        large.isHttpURL else {
                 return nil
         }
         self.small = small
@@ -175,7 +198,11 @@ struct ProfileLinks : JSONConvertible {
         guard let selfLink = jsonDictionary?["self"] as? String,
         let html = jsonDictionary?["html"] as? String,
         let photos = jsonDictionary?["photos"] as? String,
-        let likes = jsonDictionary?["likes"] as? String else {
+        let likes = jsonDictionary?["likes"] as? String,
+        selfLink.isHttpURL,
+        html.isHttpURL,
+        photos.isHttpURL,
+        likes.isHttpURL else{
             return nil
         }
         self.selfLink = selfLink
@@ -199,14 +226,22 @@ struct User: JSONConvertible  {
         guard let id = jsonDictionary?["id"] as? String,
         let username = jsonDictionary?["username"] as? String,
         let name = jsonDictionary?["name"] as? String,
-        let profileImages = jsonDictionary?["profile_image"] as? JSONDictionary,
-        let links = jsonDictionary?["links"] as? JSONDictionary else {
+        let profileImagesDic = jsonDictionary?["profile_image"] as? JSONDictionary,
+        let linksDic = jsonDictionary?["links"] as? JSONDictionary,
+        let profileImage = ProfileImage(jsonDictionary: profileImagesDic),
+        let profileLinks = ProfileLinks(jsonDictionary: linksDic) else {
                 return nil
         }
         self.id = id
         self.userName = username
         self.name = name
-        self.profileImage = ProfileImage(jsonDictionary: profileImages)!
-        self.profileLinks = ProfileLinks(jsonDictionary: links)!
+        self.profileImage = profileImage
+        self.profileLinks = profileLinks
+    }
+}
+
+extension String {
+    var isHttpURL: Bool {
+        return self.hasPrefix("http://") || self.hasPrefix("https://")
     }
 }
