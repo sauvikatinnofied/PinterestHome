@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wzB-d8-a1w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="62o-Xf-OB1">
+            <objects>
+                <viewController id="gZr-C0-wMD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RFP-xz-v6W"/>
+                        <viewControllerLayoutGuide type="bottom" id="ktu-hj-igF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lzr-FO-V6c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not in this milestone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-9C-2iL">
+                                <rect key="frame" x="109.5" y="323" width="156.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.0039215686274509803" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wqp-9C-2iL" firstAttribute="centerX" secondItem="Lzr-FO-V6c" secondAttribute="centerX" id="Ip8-HT-eHg"/>
+                            <constraint firstItem="wqp-9C-2iL" firstAttribute="centerY" secondItem="Lzr-FO-V6c" secondAttribute="centerY" id="Lzm-hz-3mv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="ZS2-e3-yqr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMz-RX-7NX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-631" y="47"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="IEm-5f-hEj">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="flw-OD-598" customClass="HomeVC" customModule="MindValleyTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X2P-hJ-vJw"/>
+                        <viewControllerLayoutGuide type="bottom" id="TYh-hT-V26"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bJa-Zr-eao">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i4p-hc-njT" customClass="HomeCollectionView" customModule="MindValleyTest" customModuleProvider="target">
+                                <rect key="frame" x="8" y="28" width="359" height="590"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="hc6-2F-TIo" customClass="PinterestFlowLayout" customModule="MindValleyTest" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PinCell" id="Vgp-c3-PiO" customClass="PinCell" customModule="MindValleyTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8fe-ur-cqF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="148"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="148" id="Loy-Sr-snI"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="8fe-ur-cqF" secondAttribute="trailing" constant="-8" id="OVP-z8-6N9"/>
+                                            <constraint firstItem="8fe-ur-cqF" firstAttribute="leading" secondItem="Vgp-c3-PiO" secondAttribute="leadingMargin" constant="-8" id="Ps2-gb-19Z"/>
+                                            <constraint firstItem="8fe-ur-cqF" firstAttribute="width" secondItem="Vgp-c3-PiO" secondAttribute="width" id="Rum-3v-Smj"/>
+                                            <constraint firstItem="8fe-ur-cqF" firstAttribute="top" secondItem="Vgp-c3-PiO" secondAttribute="topMargin" constant="-8" id="vDZ-W7-2Q1"/>
+                                        </constraints>
+                                        <size key="customSize" width="120" height="148"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="8fe-ur-cqF" id="t6n-Si-Tr7"/>
+                                            <outlet property="imageViewHeightLayoutConstraint" destination="Loy-Sr-snI" id="iTh-9y-nao"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="flw-OD-598" id="ubl-4s-WgB"/>
+                                    <outlet property="delegate" destination="flw-OD-598" id="yrq-KP-Spr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="i4p-hc-njT" secondAttribute="leading" constant="8" id="DYK-hW-v4U"/>
+                            <constraint firstItem="i4p-hc-njT" firstAttribute="top" secondItem="X2P-hJ-vJw" secondAttribute="bottom" constant="8" id="Zfz-Nk-ssq"/>
+                            <constraint firstItem="TYh-hT-V26" firstAttribute="top" secondItem="i4p-hc-njT" secondAttribute="bottom" id="p8M-Nt-JzV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i4p-hc-njT" secondAttribute="trailing" constant="-8" id="ucu-j9-ZHK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="PinterestLogoSelected" selectedImage="PinterestLogo" id="qcm-Ns-T8H"/>
+                    <connections>
+                        <outlet property="pinterestCollection" destination="i4p-hc-njT" id="J8Y-WA-fx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lr6-dM-fVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-631.20000000000005" y="-618.44077961019491"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gHn-ZB-Vgl">
+            <objects>
+                <tabBarController id="wzB-d8-a1w" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rZs-Ks-JR1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.74117647060000003" green="0.039215686270000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="flw-OD-598" kind="relationship" relationship="viewControllers" id="lw8-DW-hFP"/>
+                        <segue destination="gZr-C0-wMD" kind="relationship" relationship="viewControllers" id="Eg1-fQ-7QI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0LB-lF-J6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1583" y="-290"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PinterestLogo" width="22" height="22"/>
+        <image name="PinterestLogoSelected" width="22" height="22"/>
+    </resources>
+</document>

@@ -8,12 +8,98 @@
 
 /* Begin PBXBuildFile section */
 		450DF1511E3BED3C00016B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1501E3BED3C00016B9A /* AppDelegate.swift */; };
-		450DF1531E3BED3C00016B9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1521E3BED3C00016B9A /* ViewController.swift */; };
-		450DF1561E3BED3C00016B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450DF1541E3BED3C00016B9A /* Main.storyboard */; };
-		450DF1581E3BED3C00016B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450DF1571E3BED3C00016B9A /* Assets.xcassets */; };
 		450DF15B1E3BED3C00016B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450DF1591E3BED3C00016B9A /* LaunchScreen.storyboard */; };
 		450DF1661E3BED3D00016B9A /* PinterestHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1651E3BED3D00016B9A /* PinterestHomeTests.swift */; };
 		450DF1711E3BED3D00016B9A /* PinterestHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1701E3BED3D00016B9A /* PinterestHomeUITests.swift */; };
+		450DF19C1E3BEDBD00016B9A /* PinterestPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF17F1E3BEDBD00016B9A /* PinterestPost.swift */; };
+		450DF19D1E3BEDBD00016B9A /* PinterestPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF17F1E3BEDBD00016B9A /* PinterestPost.swift */; };
+		450DF19E1E3BEDBD00016B9A /* PinterestPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF17F1E3BEDBD00016B9A /* PinterestPost.swift */; };
+		450DF19F1E3BEDBD00016B9A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1821E3BEDBD00016B9A /* Cache.swift */; };
+		450DF1A01E3BEDBD00016B9A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1821E3BEDBD00016B9A /* Cache.swift */; };
+		450DF1A11E3BEDBD00016B9A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1821E3BEDBD00016B9A /* Cache.swift */; };
+		450DF1A81E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1861E3BEDBD00016B9A /* EncodingDecoding.swift */; };
+		450DF1A91E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1861E3BEDBD00016B9A /* EncodingDecoding.swift */; };
+		450DF1AA1E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1861E3BEDBD00016B9A /* EncodingDecoding.swift */; };
+		450DF1AB1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1871E3BEDBD00016B9A /* HTTPCacheClient.swift */; };
+		450DF1AC1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1871E3BEDBD00016B9A /* HTTPCacheClient.swift */; };
+		450DF1AD1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1871E3BEDBD00016B9A /* HTTPCacheClient.swift */; };
+		450DF1AE1E3BEDBD00016B9A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1881E3BEDBD00016B9A /* HTTPClient.swift */; };
+		450DF1AF1E3BEDBD00016B9A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1881E3BEDBD00016B9A /* HTTPClient.swift */; };
+		450DF1B01E3BEDBD00016B9A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1881E3BEDBD00016B9A /* HTTPClient.swift */; };
+		450DF1B11E3BEDBD00016B9A /* HTTPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1891E3BEDBD00016B9A /* HTTPErrors.swift */; };
+		450DF1B21E3BEDBD00016B9A /* HTTPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1891E3BEDBD00016B9A /* HTTPErrors.swift */; };
+		450DF1B31E3BEDBD00016B9A /* HTTPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1891E3BEDBD00016B9A /* HTTPErrors.swift */; };
+		450DF1B41E3BEDBD00016B9A /* HTTPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18A1E3BEDBD00016B9A /* HTTPHelpers.swift */; };
+		450DF1B51E3BEDBD00016B9A /* HTTPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18A1E3BEDBD00016B9A /* HTTPHelpers.swift */; };
+		450DF1B61E3BEDBD00016B9A /* HTTPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18A1E3BEDBD00016B9A /* HTTPHelpers.swift */; };
+		450DF1B71E3BEDBD00016B9A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18B1E3BEDBD00016B9A /* HTTPRequest.swift */; };
+		450DF1B81E3BEDBD00016B9A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18B1E3BEDBD00016B9A /* HTTPRequest.swift */; };
+		450DF1B91E3BEDBD00016B9A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18B1E3BEDBD00016B9A /* HTTPRequest.swift */; };
+		450DF1BA1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18C1E3BEDBD00016B9A /* HTTPRequestGenerator.swift */; };
+		450DF1BB1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18C1E3BEDBD00016B9A /* HTTPRequestGenerator.swift */; };
+		450DF1BC1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18C1E3BEDBD00016B9A /* HTTPRequestGenerator.swift */; };
+		450DF1BD1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18D1E3BEDBD00016B9A /* HTTPResponse.swift */; };
+		450DF1BE1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18D1E3BEDBD00016B9A /* HTTPResponse.swift */; };
+		450DF1BF1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18D1E3BEDBD00016B9A /* HTTPResponse.swift */; };
+		450DF1C01E3BEDBD00016B9A /* HTTPResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18E1E3BEDBD00016B9A /* HTTPResponseGenerator.swift */; };
+		450DF1C11E3BEDBD00016B9A /* HTTPResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18E1E3BEDBD00016B9A /* HTTPResponseGenerator.swift */; };
+		450DF1C21E3BEDBD00016B9A /* HTTPResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18E1E3BEDBD00016B9A /* HTTPResponseGenerator.swift */; };
+		450DF1C31E3BEDBD00016B9A /* JSON+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18F1E3BEDBD00016B9A /* JSON+API.swift */; };
+		450DF1C41E3BEDBD00016B9A /* JSON+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18F1E3BEDBD00016B9A /* JSON+API.swift */; };
+		450DF1C51E3BEDBD00016B9A /* JSON+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF18F1E3BEDBD00016B9A /* JSON+API.swift */; };
+		450DF1C61E3BEDBD00016B9A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1901E3BEDBD00016B9A /* JSON.swift */; };
+		450DF1C71E3BEDBD00016B9A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1901E3BEDBD00016B9A /* JSON.swift */; };
+		450DF1C81E3BEDBD00016B9A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1901E3BEDBD00016B9A /* JSON.swift */; };
+		450DF1CF1E3BEDBD00016B9A /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1931E3BEDBD00016B9A /* WebImage.swift */; };
+		450DF1D01E3BEDBD00016B9A /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1931E3BEDBD00016B9A /* WebImage.swift */; };
+		450DF1D11E3BEDBD00016B9A /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1931E3BEDBD00016B9A /* WebImage.swift */; };
+		450DF1D21E3BEDBD00016B9A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1961E3BEDBD00016B9A /* EndPoints.swift */; };
+		450DF1D31E3BEDBD00016B9A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1961E3BEDBD00016B9A /* EndPoints.swift */; };
+		450DF1D41E3BEDBD00016B9A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1961E3BEDBD00016B9A /* EndPoints.swift */; };
+		450DF1D51E3BEDBD00016B9A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1981E3BEDBD00016B9A /* Date.swift */; };
+		450DF1D61E3BEDBD00016B9A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1981E3BEDBD00016B9A /* Date.swift */; };
+		450DF1D71E3BEDBD00016B9A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1981E3BEDBD00016B9A /* Date.swift */; };
+		450DF1D81E3BEDBD00016B9A /* DispathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1991E3BEDBD00016B9A /* DispathUtil.swift */; };
+		450DF1D91E3BEDBD00016B9A /* DispathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1991E3BEDBD00016B9A /* DispathUtil.swift */; };
+		450DF1DA1E3BEDBD00016B9A /* DispathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1991E3BEDBD00016B9A /* DispathUtil.swift */; };
+		450DF1DB1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF19A1E3BEDBD00016B9A /* ImageProcessing.swift */; };
+		450DF1DC1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF19A1E3BEDBD00016B9A /* ImageProcessing.swift */; };
+		450DF1DD1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF19A1E3BEDBD00016B9A /* ImageProcessing.swift */; };
+		450DF1DE1E3BEDBD00016B9A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF19B1E3BEDBD00016B9A /* UIColor.swift */; };
+		450DF1DF1E3BEDBD00016B9A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF19B1E3BEDBD00016B9A /* UIColor.swift */; };
+		450DF1E01E3BEDBD00016B9A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF19B1E3BEDBD00016B9A /* UIColor.swift */; };
+		450DF1E21E3BEDD500016B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450DF1E11E3BEDD500016B9A /* Main.storyboard */; };
+		450DF1E31E3BEDD500016B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450DF1E11E3BEDD500016B9A /* Main.storyboard */; };
+		450DF1F21E3BEDEE00016B9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1E51E3BEDEE00016B9A /* Constants.swift */; };
+		450DF1F31E3BEDEE00016B9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1E51E3BEDEE00016B9A /* Constants.swift */; };
+		450DF1F41E3BEDEE00016B9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1E51E3BEDEE00016B9A /* Constants.swift */; };
+		450DF1F51E3BEDEE00016B9A /* HomeCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1E91E3BEDEE00016B9A /* HomeCollectionDataSource.swift */; };
+		450DF1F61E3BEDEE00016B9A /* HomeCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1E91E3BEDEE00016B9A /* HomeCollectionDataSource.swift */; };
+		450DF1F71E3BEDEE00016B9A /* HomeCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1E91E3BEDEE00016B9A /* HomeCollectionDataSource.swift */; };
+		450DF1F81E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift */; };
+		450DF1F91E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift */; };
+		450DF1FA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift */; };
+		450DF1FB1E3BEDEE00016B9A /* PinterestFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EB1E3BEDEE00016B9A /* PinterestFlowLayout.swift */; };
+		450DF1FC1E3BEDEE00016B9A /* PinterestFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EB1E3BEDEE00016B9A /* PinterestFlowLayout.swift */; };
+		450DF1FD1E3BEDEE00016B9A /* PinterestFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EB1E3BEDEE00016B9A /* PinterestFlowLayout.swift */; };
+		450DF1FE1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EC1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift */; };
+		450DF1FF1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EC1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift */; };
+		450DF2001E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EC1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift */; };
+		450DF2011E3BEDEE00016B9A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1ED1E3BEDEE00016B9A /* HomeVC.swift */; };
+		450DF2021E3BEDEE00016B9A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1ED1E3BEDEE00016B9A /* HomeVC.swift */; };
+		450DF2031E3BEDEE00016B9A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1ED1E3BEDEE00016B9A /* HomeVC.swift */; };
+		450DF2041E3BEDEE00016B9A /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EF1E3BEDEE00016B9A /* HomeCollectionView.swift */; };
+		450DF2051E3BEDEE00016B9A /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EF1E3BEDEE00016B9A /* HomeCollectionView.swift */; };
+		450DF2061E3BEDEE00016B9A /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1EF1E3BEDEE00016B9A /* HomeCollectionView.swift */; };
+		450DF2071E3BEDEE00016B9A /* PinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1F01E3BEDEE00016B9A /* PinCell.swift */; };
+		450DF2081E3BEDEE00016B9A /* PinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1F01E3BEDEE00016B9A /* PinCell.swift */; };
+		450DF2091E3BEDEE00016B9A /* PinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1F01E3BEDEE00016B9A /* PinCell.swift */; };
+		450DF20A1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1F11E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift */; };
+		450DF20B1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1F11E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift */; };
+		450DF20C1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF1F11E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift */; };
+		450DF20E1E3BEE2400016B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450DF20D1E3BEE2400016B9A /* Assets.xcassets */; };
+		450DF20F1E3BEE2400016B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450DF20D1E3BEE2400016B9A /* Assets.xcassets */; };
+		450DF2101E3BEE2400016B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450DF20D1E3BEE2400016B9A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +122,6 @@
 /* Begin PBXFileReference section */
 		450DF14D1E3BED3C00016B9A /* PinterestHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinterestHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		450DF1501E3BED3C00016B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		450DF1521E3BED3C00016B9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		450DF1551E3BED3C00016B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		450DF1571E3BED3C00016B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450DF15A1E3BED3C00016B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		450DF15C1E3BED3C00016B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450DF1611E3BED3C00016B9A /* PinterestHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +130,36 @@
 		450DF16C1E3BED3D00016B9A /* PinterestHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		450DF1701E3BED3D00016B9A /* PinterestHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestHomeUITests.swift; sourceTree = "<group>"; };
 		450DF1721E3BED3D00016B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450DF17F1E3BEDBD00016B9A /* PinterestPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestPost.swift; sourceTree = "<group>"; };
+		450DF1821E3BEDBD00016B9A /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		450DF1861E3BEDBD00016B9A /* EncodingDecoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingDecoding.swift; sourceTree = "<group>"; };
+		450DF1871E3BEDBD00016B9A /* HTTPCacheClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPCacheClient.swift; sourceTree = "<group>"; };
+		450DF1881E3BEDBD00016B9A /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		450DF1891E3BEDBD00016B9A /* HTTPErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPErrors.swift; sourceTree = "<group>"; };
+		450DF18A1E3BEDBD00016B9A /* HTTPHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelpers.swift; sourceTree = "<group>"; };
+		450DF18B1E3BEDBD00016B9A /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		450DF18C1E3BEDBD00016B9A /* HTTPRequestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestGenerator.swift; sourceTree = "<group>"; };
+		450DF18D1E3BEDBD00016B9A /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		450DF18E1E3BEDBD00016B9A /* HTTPResponseGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseGenerator.swift; sourceTree = "<group>"; };
+		450DF18F1E3BEDBD00016B9A /* JSON+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+API.swift"; sourceTree = "<group>"; };
+		450DF1901E3BEDBD00016B9A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		450DF1931E3BEDBD00016B9A /* WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
+		450DF1961E3BEDBD00016B9A /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		450DF1981E3BEDBD00016B9A /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		450DF1991E3BEDBD00016B9A /* DispathUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispathUtil.swift; sourceTree = "<group>"; };
+		450DF19A1E3BEDBD00016B9A /* ImageProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		450DF19B1E3BEDBD00016B9A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		450DF1E11E3BEDD500016B9A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		450DF1E51E3BEDEE00016B9A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		450DF1E91E3BEDEE00016B9A /* HomeCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionDataSource.swift; sourceTree = "<group>"; };
+		450DF1EA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionDelegate.swift; sourceTree = "<group>"; };
+		450DF1EB1E3BEDEE00016B9A /* PinterestFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestFlowLayout.swift; sourceTree = "<group>"; };
+		450DF1EC1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayoutAttributes.swift; sourceTree = "<group>"; };
+		450DF1ED1E3BEDEE00016B9A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		450DF1EF1E3BEDEE00016B9A /* HomeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
+		450DF1F01E3BEDEE00016B9A /* PinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCell.swift; sourceTree = "<group>"; };
+		450DF1F11E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestCollectionLoadMoreCell.swift; sourceTree = "<group>"; };
+		450DF20D1E3BEE2400016B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +210,15 @@
 		450DF14F1E3BED3C00016B9A /* PinterestHome */ = {
 			isa = PBXGroup;
 			children = (
+				450DF20D1E3BEE2400016B9A /* Assets.xcassets */,
+				450DF1E41E3BEDEE00016B9A /* Constant */,
+				450DF1E61E3BEDEE00016B9A /* Controllers */,
+				450DF17E1E3BEDBD00016B9A /* Model */,
+				450DF1801E3BEDBD00016B9A /* Networking */,
+				450DF1941E3BEDBD00016B9A /* Services */,
+				450DF1971E3BEDBD00016B9A /* Util */,
 				450DF1501E3BED3C00016B9A /* AppDelegate.swift */,
-				450DF1521E3BED3C00016B9A /* ViewController.swift */,
-				450DF1541E3BED3C00016B9A /* Main.storyboard */,
-				450DF1571E3BED3C00016B9A /* Assets.xcassets */,
+				450DF1E11E3BEDD500016B9A /* Main.storyboard */,
 				450DF1591E3BED3C00016B9A /* LaunchScreen.storyboard */,
 				450DF15C1E3BED3C00016B9A /* Info.plist */,
 			);
@@ -123,6 +241,124 @@
 				450DF1721E3BED3D00016B9A /* Info.plist */,
 			);
 			path = PinterestHomeUITests;
+			sourceTree = "<group>";
+		};
+		450DF17E1E3BEDBD00016B9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				450DF17F1E3BEDBD00016B9A /* PinterestPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		450DF1801E3BEDBD00016B9A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1811E3BEDBD00016B9A /* Cache */,
+				450DF1831E3BEDBD00016B9A /* Core */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		450DF1811E3BEDBD00016B9A /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1821E3BEDBD00016B9A /* Cache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		450DF1831E3BEDBD00016B9A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1861E3BEDBD00016B9A /* EncodingDecoding.swift */,
+				450DF1871E3BEDBD00016B9A /* HTTPCacheClient.swift */,
+				450DF1881E3BEDBD00016B9A /* HTTPClient.swift */,
+				450DF1891E3BEDBD00016B9A /* HTTPErrors.swift */,
+				450DF18A1E3BEDBD00016B9A /* HTTPHelpers.swift */,
+				450DF18B1E3BEDBD00016B9A /* HTTPRequest.swift */,
+				450DF18C1E3BEDBD00016B9A /* HTTPRequestGenerator.swift */,
+				450DF18D1E3BEDBD00016B9A /* HTTPResponse.swift */,
+				450DF18E1E3BEDBD00016B9A /* HTTPResponseGenerator.swift */,
+				450DF18F1E3BEDBD00016B9A /* JSON+API.swift */,
+				450DF1901E3BEDBD00016B9A /* JSON.swift */,
+				450DF1931E3BEDBD00016B9A /* WebImage.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		450DF1941E3BEDBD00016B9A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1951E3BEDBD00016B9A /* APIServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		450DF1951E3BEDBD00016B9A /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1961E3BEDBD00016B9A /* EndPoints.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		450DF1971E3BEDBD00016B9A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1981E3BEDBD00016B9A /* Date.swift */,
+				450DF1991E3BEDBD00016B9A /* DispathUtil.swift */,
+				450DF19A1E3BEDBD00016B9A /* ImageProcessing.swift */,
+				450DF19B1E3BEDBD00016B9A /* UIColor.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		450DF1E41E3BEDEE00016B9A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1E51E3BEDEE00016B9A /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		450DF1E61E3BEDEE00016B9A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1E71E3BEDEE00016B9A /* HomeVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		450DF1E71E3BEDEE00016B9A /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1E81E3BEDEE00016B9A /* CollectionViewHelpers */,
+				450DF1ED1E3BEDEE00016B9A /* HomeVC.swift */,
+				450DF1EE1E3BEDEE00016B9A /* View */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		450DF1E81E3BEDEE00016B9A /* CollectionViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1E91E3BEDEE00016B9A /* HomeCollectionDataSource.swift */,
+				450DF1EA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift */,
+				450DF1EB1E3BEDEE00016B9A /* PinterestFlowLayout.swift */,
+				450DF1EC1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift */,
+			);
+			path = CollectionViewHelpers;
+			sourceTree = "<group>";
+		};
+		450DF1EE1E3BEDEE00016B9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				450DF1EF1E3BEDEE00016B9A /* HomeCollectionView.swift */,
+				450DF1F01E3BEDEE00016B9A /* PinCell.swift */,
+				450DF1F11E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +468,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450DF1E21E3BEDD500016B9A /* Main.storyboard in Resources */,
+				450DF20E1E3BEE2400016B9A /* Assets.xcassets in Resources */,
 				450DF15B1E3BED3C00016B9A /* LaunchScreen.storyboard in Resources */,
-				450DF1581E3BED3C00016B9A /* Assets.xcassets in Resources */,
-				450DF1561E3BED3C00016B9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450DF20F1E3BEE2400016B9A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +486,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450DF2101E3BEE2400016B9A /* Assets.xcassets in Resources */,
+				450DF1E31E3BEDD500016B9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +498,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450DF1531E3BED3C00016B9A /* ViewController.swift in Sources */,
+				450DF1F21E3BEDEE00016B9A /* Constants.swift in Sources */,
+				450DF1CF1E3BEDBD00016B9A /* WebImage.swift in Sources */,
+				450DF1B71E3BEDBD00016B9A /* HTTPRequest.swift in Sources */,
+				450DF19C1E3BEDBD00016B9A /* PinterestPost.swift in Sources */,
+				450DF1B11E3BEDBD00016B9A /* HTTPErrors.swift in Sources */,
+				450DF1B41E3BEDBD00016B9A /* HTTPHelpers.swift in Sources */,
+				450DF1D21E3BEDBD00016B9A /* EndPoints.swift in Sources */,
+				450DF2041E3BEDEE00016B9A /* HomeCollectionView.swift in Sources */,
+				450DF1FB1E3BEDEE00016B9A /* PinterestFlowLayout.swift in Sources */,
+				450DF1AE1E3BEDBD00016B9A /* HTTPClient.swift in Sources */,
+				450DF19F1E3BEDBD00016B9A /* Cache.swift in Sources */,
+				450DF1C31E3BEDBD00016B9A /* JSON+API.swift in Sources */,
+				450DF1FE1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */,
+				450DF2071E3BEDEE00016B9A /* PinCell.swift in Sources */,
+				450DF1D81E3BEDBD00016B9A /* DispathUtil.swift in Sources */,
+				450DF1A81E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */,
+				450DF1DE1E3BEDBD00016B9A /* UIColor.swift in Sources */,
+				450DF1AB1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */,
+				450DF1BA1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */,
+				450DF1F81E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */,
+				450DF1DB1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */,
+				450DF2011E3BEDEE00016B9A /* HomeVC.swift in Sources */,
 				450DF1511E3BED3C00016B9A /* AppDelegate.swift in Sources */,
+				450DF1BD1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */,
+				450DF20A1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */,
+				450DF1D51E3BEDBD00016B9A /* Date.swift in Sources */,
+				450DF1F51E3BEDEE00016B9A /* HomeCollectionDataSource.swift in Sources */,
+				450DF1C01E3BEDBD00016B9A /* HTTPResponseGenerator.swift in Sources */,
+				450DF1C61E3BEDBD00016B9A /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +534,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450DF1F31E3BEDEE00016B9A /* Constants.swift in Sources */,
+				450DF1D01E3BEDBD00016B9A /* WebImage.swift in Sources */,
+				450DF1B81E3BEDBD00016B9A /* HTTPRequest.swift in Sources */,
+				450DF19D1E3BEDBD00016B9A /* PinterestPost.swift in Sources */,
+				450DF1B21E3BEDBD00016B9A /* HTTPErrors.swift in Sources */,
+				450DF1B51E3BEDBD00016B9A /* HTTPHelpers.swift in Sources */,
+				450DF1D31E3BEDBD00016B9A /* EndPoints.swift in Sources */,
+				450DF2051E3BEDEE00016B9A /* HomeCollectionView.swift in Sources */,
+				450DF1FC1E3BEDEE00016B9A /* PinterestFlowLayout.swift in Sources */,
+				450DF1AF1E3BEDBD00016B9A /* HTTPClient.swift in Sources */,
+				450DF1A01E3BEDBD00016B9A /* Cache.swift in Sources */,
+				450DF1C41E3BEDBD00016B9A /* JSON+API.swift in Sources */,
+				450DF1FF1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */,
+				450DF2081E3BEDEE00016B9A /* PinCell.swift in Sources */,
+				450DF1D91E3BEDBD00016B9A /* DispathUtil.swift in Sources */,
+				450DF1A91E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */,
+				450DF1DF1E3BEDBD00016B9A /* UIColor.swift in Sources */,
+				450DF1AC1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */,
+				450DF1BB1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */,
+				450DF1F91E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */,
+				450DF1DC1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */,
+				450DF2021E3BEDEE00016B9A /* HomeVC.swift in Sources */,
 				450DF1661E3BED3D00016B9A /* PinterestHomeTests.swift in Sources */,
+				450DF1BE1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */,
+				450DF20B1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */,
+				450DF1D61E3BEDBD00016B9A /* Date.swift in Sources */,
+				450DF1F61E3BEDEE00016B9A /* HomeCollectionDataSource.swift in Sources */,
+				450DF1C11E3BEDBD00016B9A /* HTTPResponseGenerator.swift in Sources */,
+				450DF1C71E3BEDBD00016B9A /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +570,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450DF1F41E3BEDEE00016B9A /* Constants.swift in Sources */,
+				450DF1D11E3BEDBD00016B9A /* WebImage.swift in Sources */,
+				450DF1B91E3BEDBD00016B9A /* HTTPRequest.swift in Sources */,
+				450DF19E1E3BEDBD00016B9A /* PinterestPost.swift in Sources */,
+				450DF1B31E3BEDBD00016B9A /* HTTPErrors.swift in Sources */,
+				450DF1B61E3BEDBD00016B9A /* HTTPHelpers.swift in Sources */,
+				450DF1D41E3BEDBD00016B9A /* EndPoints.swift in Sources */,
+				450DF2061E3BEDEE00016B9A /* HomeCollectionView.swift in Sources */,
+				450DF1FD1E3BEDEE00016B9A /* PinterestFlowLayout.swift in Sources */,
+				450DF1B01E3BEDBD00016B9A /* HTTPClient.swift in Sources */,
+				450DF1A11E3BEDBD00016B9A /* Cache.swift in Sources */,
+				450DF1C51E3BEDBD00016B9A /* JSON+API.swift in Sources */,
+				450DF2001E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */,
+				450DF2091E3BEDEE00016B9A /* PinCell.swift in Sources */,
+				450DF1DA1E3BEDBD00016B9A /* DispathUtil.swift in Sources */,
+				450DF1AA1E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */,
+				450DF1E01E3BEDBD00016B9A /* UIColor.swift in Sources */,
+				450DF1AD1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */,
+				450DF1BC1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */,
+				450DF1FA1E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */,
+				450DF1DD1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */,
+				450DF2031E3BEDEE00016B9A /* HomeVC.swift in Sources */,
 				450DF1711E3BED3D00016B9A /* PinterestHomeUITests.swift in Sources */,
+				450DF1BF1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */,
+				450DF20C1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */,
+				450DF1D71E3BEDBD00016B9A /* Date.swift in Sources */,
+				450DF1F71E3BEDEE00016B9A /* HomeCollectionDataSource.swift in Sources */,
+				450DF1C21E3BEDBD00016B9A /* HTTPResponseGenerator.swift in Sources */,
+				450DF1C81E3BEDBD00016B9A /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +618,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		450DF1541E3BED3C00016B9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				450DF1551E3BED3C00016B9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		450DF1591E3BED3C00016B9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
