@@ -28,9 +28,41 @@ class PinterestHomeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testHomeScreenLoading() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let collectionViewsQuery = app.collectionViews
+        let image = collectionViewsQuery.children(matching: .cell).element(boundBy: 2).otherElements.children(matching: .image).element
+        image.swipeDown()
+        
+        let image2 = collectionViewsQuery.children(matching: .cell).element(boundBy: 8).otherElements.children(matching: .image).element
+        image2.swipeUp()
+        
+        let collectionView = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .collectionView).element
+        collectionView.swipeDown()
+        image2.swipeUp()
+        collectionViewsQuery.children(matching: .cell).element(boundBy: 0).otherElements.children(matching: .image).element.swipeDown()
+        image2.swipeUp()
+        collectionViewsQuery.children(matching: .cell).element(boundBy: 4).otherElements.children(matching: .image).element.swipeDown()
+        
+        let image3 = collectionViewsQuery.children(matching: .cell).element(boundBy: 6).otherElements.children(matching: .image).element
+        image3.swipeUp()
+        image3.tap()
+        collectionView.swipeUp()
+        
+        let image4 = collectionViewsQuery.children(matching: .cell).element(boundBy: 7).otherElements.children(matching: .image).element
+        image4.swipeUp()
+        image3.swipeUp()
+        collectionView.swipeDown()
+        image.swipeDown()
+        image3.swipeUp()
+        image4.swipeUp()
+        image2.swipeDown()
+        
+        
+        
     }
     
 }

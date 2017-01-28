@@ -64,7 +64,7 @@ class HomeVC: UIViewController {
             strongSelf.loadingSate = .finshed
             (strongSelf.pinterestCollection.viewWithTag(999) as? UIRefreshControl)?.endRefreshing()
             if let posts = response.result?.value {
-                strongSelf.pinterestPosts = posts
+                strongSelf.pinterestPosts = posts + posts
                 strongSelf.pinterestCollection.reloadData()
             } else {
                 
