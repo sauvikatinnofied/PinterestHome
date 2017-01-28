@@ -1,9 +1,9 @@
 //
 //  UIColor.swift
-//  BlueLight
+//  PinterestHome
 //
 //  Created by Sauvik Dolui on 29/02/16.
-//  Copyright © 2016 Innofied Soulution Pvt. Ltd. All rights reserved.
+//  Copyright © 2017 Sauvik Dolui. All rights reserved.
 //
 
 import Foundation

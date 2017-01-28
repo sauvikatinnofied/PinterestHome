@@ -46,6 +46,10 @@ class PinterRestPostTest: XCTestCase {
                 }
                 let posts = dicArray.map(PinterestPost.init)
                 XCTAssertTrue(posts.count == dicArray.count, "JSON Paring Failed from JSON File")
+                for post in posts {
+                    XCTAssertTrue((post?.color.hasPrefix("#"))!, "Color Values must have # as prefix")
+                    XCTAssertTrue(post?.color.characters.count == 7, "Color Values must be in #xxxxx")
+                }
             } else {
                 XCTAssert(false, "JSON File Not Found")
             }
