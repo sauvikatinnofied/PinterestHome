@@ -43,7 +43,6 @@ class HomeVC: UIViewController {
         
         loadPosts()
         addPullToRefresh()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +57,7 @@ class HomeVC: UIViewController {
         // JSON Request
         let allPostRequest = HTTPRequestFor<JSONArrayOf<PinterestPost>>(endpoint: PicturePostEndPoint.allPosts, baseURL: baseURL)
         loadingSate = .onGoing
-        let task = httpCacheClient.request(request: allPostRequest) { [weak self] (response) in
+        _ = httpCacheClient.request(request: allPostRequest) { [weak self] (response) in
            
             guard let strongSelf = self else { return }
             strongSelf.loadingSate = .finshed

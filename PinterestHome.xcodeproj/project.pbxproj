@@ -97,6 +97,9 @@
 		450DF2151E3BF22B00016B9A /* PinterestPosts.json in Resources */ = {isa = PBXBuildFile; fileRef = 450DF2131E3BF22B00016B9A /* PinterestPosts.json */; };
 		450DF2161E3BF22B00016B9A /* PinterestPosts.json in Resources */ = {isa = PBXBuildFile; fileRef = 450DF2131E3BF22B00016B9A /* PinterestPosts.json */; };
 		450DF2181E3BF8C800016B9A /* CachingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DF2171E3BF8C800016B9A /* CachingTest.swift */; };
+		453ACB7D1E7443860095CF20 /* Data+Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453ACB7C1E7443860095CF20 /* Data+Multipart.swift */; };
+		453ACB7F1E746C950095CF20 /* Data+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453ACB7E1E746C950095CF20 /* Data+Body.swift */; };
+		453ACB831E74E54F0095CF20 /* UIImage+MultipartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453ACB821E74E54F0095CF20 /* UIImage+MultipartItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +163,9 @@
 		450DF2111E3BF1F500016B9A /* PinterRestPostTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterRestPostTest.swift; sourceTree = "<group>"; };
 		450DF2131E3BF22B00016B9A /* PinterestPosts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PinterestPosts.json; sourceTree = "<group>"; };
 		450DF2171E3BF8C800016B9A /* CachingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingTest.swift; sourceTree = "<group>"; };
+		453ACB7C1E7443860095CF20 /* Data+Multipart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Multipart.swift"; sourceTree = "<group>"; };
+		453ACB7E1E746C950095CF20 /* Data+Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Body.swift"; sourceTree = "<group>"; };
+		453ACB821E74E54F0095CF20 /* UIImage+MultipartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MultipartItem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +263,7 @@
 		450DF1801E3BEDBD00016B9A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				453ACB801E74E5320095CF20 /* UI */,
 				450DF1811E3BEDBD00016B9A /* Cache */,
 				450DF1831E3BEDBD00016B9A /* Core */,
 			);
@@ -286,6 +293,8 @@
 				450DF18F1E3BEDBD00016B9A /* JSON+API.swift */,
 				450DF1901E3BEDBD00016B9A /* JSON.swift */,
 				450DF1931E3BEDBD00016B9A /* WebImage.swift */,
+				453ACB7C1E7443860095CF20 /* Data+Multipart.swift */,
+				453ACB7E1E746C950095CF20 /* Data+Body.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -362,6 +371,22 @@
 				450DF1F11E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		453ACB801E74E5320095CF20 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				453ACB811E74E5320095CF20 /* UI+Image */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		453ACB811E74E5320095CF20 /* UI+Image */ = {
+			isa = PBXGroup;
+			children = (
+				453ACB821E74E54F0095CF20 /* UIImage+MultipartItem.swift */,
+			);
+			path = "UI+Image";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,16 +541,19 @@
 				450DF1AE1E3BEDBD00016B9A /* HTTPClient.swift in Sources */,
 				450DF19F1E3BEDBD00016B9A /* Cache.swift in Sources */,
 				450DF1C31E3BEDBD00016B9A /* JSON+API.swift in Sources */,
+				453ACB7D1E7443860095CF20 /* Data+Multipart.swift in Sources */,
 				450DF1FE1E3BEDEE00016B9A /* PinterestLayoutAttributes.swift in Sources */,
 				450DF2071E3BEDEE00016B9A /* PinCell.swift in Sources */,
 				450DF1D81E3BEDBD00016B9A /* DispathUtil.swift in Sources */,
 				450DF1A81E3BEDBD00016B9A /* EncodingDecoding.swift in Sources */,
 				450DF1DE1E3BEDBD00016B9A /* UIColor.swift in Sources */,
 				450DF1AB1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */,
+				453ACB831E74E54F0095CF20 /* UIImage+MultipartItem.swift in Sources */,
 				450DF1BA1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */,
 				450DF1F81E3BEDEE00016B9A /* HomeCollectionDelegate.swift in Sources */,
 				450DF1DB1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */,
 				450DF2011E3BEDEE00016B9A /* HomeVC.swift in Sources */,
+				453ACB7F1E746C950095CF20 /* Data+Body.swift in Sources */,
 				450DF1511E3BED3C00016B9A /* AppDelegate.swift in Sources */,
 				450DF1BD1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */,
 				450DF20A1E3BEDEE00016B9A /* PinterestCollectionLoadMoreCell.swift in Sources */,
@@ -819,6 +847,7 @@
 				450DF1771E3BED3D00016B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		450DF1781E3BED3D00016B9A /* Build configuration list for PBXNativeTarget "PinterestHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -827,6 +856,7 @@
 				450DF17A1E3BED3D00016B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		450DF17B1E3BED3D00016B9A /* Build configuration list for PBXNativeTarget "PinterestHomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -835,6 +865,7 @@
 				450DF17D1E3BED3D00016B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

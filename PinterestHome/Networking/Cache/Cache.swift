@@ -67,7 +67,7 @@ struct OnMemoryCache: MemoryCache {
     private var cacheDictionary: [String : CacheItemType] = [:]
     private var allCachedItems : [CacheItemType] {
         var values = [CacheItemType]()
-        for (key, value) in cacheDictionary {
+        for (_, value) in cacheDictionary {
             values.append(value)
         }
         return values

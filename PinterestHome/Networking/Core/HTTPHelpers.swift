@@ -16,15 +16,22 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 public protocol Endpoint {
-    var path: String {get}
-    var method: HTTPMethod {get}
+    var     path: String {get}
+    var   method: HTTPMethod {get}
 }
 
-public typealias MIMEType = String
+//public typealias MIMEType = String
+public enum MIMEType: String {
+    case imageJPEG  = "image/jpeg"
+    case imagePNG   = "image/png"
+    case pdf        = "application/pdf"
+    case json       = "application/json"
+}
 
 public enum HTTPHeader {
     
-    case contentDisposition(String)
+    case contentDisposition(formKey: String)
+    case contentDispositionMIMEType(fileKey: String, fileName:String)
     case accept([HTTPContentType])
     case contentType(HTTPContentType)
     case authorization(String)
@@ -32,7 +39,7 @@ public enum HTTPHeader {
     
     var key: String {
         switch self {
-        case .contentDisposition:
+        case .contentDisposition, .contentDispositionMIMEType:
             return "Content-Disposition"
         case .accept:
             return "Accept"
@@ -48,7 +55,9 @@ public enum HTTPHeader {
     var requestHeaderValue: String {
         switch self {
         case .contentDisposition(let disposition):
-            return disposition
+            return "form-data; name=\"\(disposition)\""
+        case .contentDispositionMIMEType(let fileKey, let fileName):
+            return "form-data; name=\"\(fileKey)\"; filename=\"\(fileName)\""
         case .accept(let types):
             let typeStrings = types.map({$0.rawValue})
             return typeStrings.joined(separator: ", ")
@@ -72,7 +81,7 @@ public enum HTTPContentType: RawRepresentable {
     case form
     case multipart(String)
     
-    public typealias RawValue = MIMEType
+    public typealias RawValue = MIMEType.RawValue
     
     public init?(rawValue: HTTPContentType.RawValue) {
         switch rawValue {
