@@ -45,9 +45,11 @@ extension HTTPMultipartBody: DataEncodable {
         var body = Data(multipartItems: self.attachments, boundary: self.boundary)
         
         if let paramDictionary = self.paramDictionary,
-            let data = try Data(parameters:paramDictionary, boundary: boundary) {
+            let data = try Data(parameters:paramDictionary, boundary: self.boundary) {
             body.append(data)
         }
+        body.appendStringLine(string: "--\(boundary)--")
+
         return body
     }
 }

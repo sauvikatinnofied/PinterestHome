@@ -15,7 +15,7 @@ enum PicturePostEndPoint: Endpoint {
     var path: String {
         switch self {
         case .allPosts:
-            return "raw/wgkJgazE"
+            return "sauvikatinnofied/4339fb17e5c988a1b77ec02346f6cf56/raw/fb332000ae1534145e12590532eee9abac1c9876/PinterestHome.json"
         }
         
     }

@@ -22,7 +22,7 @@ class HomeVC: UIViewController {
     // TODO: Pull to refresh
     
     // MARK: Private Properties
-    fileprivate let baseURL = URL(string: "http://pastebin.com/")!
+    fileprivate let baseURL = URL(string: "https://gist.githubusercontent.com/")!
     fileprivate var pinterestPosts: [PinterestPost] = [] // Intially an empty array
     fileprivate var onMemoryCache = OnMemoryCache.shared
     fileprivate var httpCacheClient: HTTPCacheClient!

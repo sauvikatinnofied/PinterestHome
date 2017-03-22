@@ -100,6 +100,7 @@
 		453ACB7D1E7443860095CF20 /* Data+Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453ACB7C1E7443860095CF20 /* Data+Multipart.swift */; };
 		453ACB7F1E746C950095CF20 /* Data+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453ACB7E1E746C950095CF20 /* Data+Body.swift */; };
 		453ACB831E74E54F0095CF20 /* UIImage+MultipartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453ACB821E74E54F0095CF20 /* UIImage+MultipartItem.swift */; };
+		45A7D9DB1E785DC80072231B /* MultipartTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7D9DA1E785DC80072231B /* MultipartTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		453ACB7C1E7443860095CF20 /* Data+Multipart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Multipart.swift"; sourceTree = "<group>"; };
 		453ACB7E1E746C950095CF20 /* Data+Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Body.swift"; sourceTree = "<group>"; };
 		453ACB821E74E54F0095CF20 /* UIImage+MultipartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MultipartItem.swift"; sourceTree = "<group>"; };
+		45A7D9DA1E785DC80072231B /* MultipartTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 				450DF2111E3BF1F500016B9A /* PinterRestPostTest.swift */,
 				450DF2131E3BF22B00016B9A /* PinterestPosts.json */,
 				450DF2171E3BF8C800016B9A /* CachingTest.swift */,
+				45A7D9DA1E785DC80072231B /* MultipartTest.swift */,
 			);
 			path = PinterestHomeTests;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				450DF1AC1E3BEDBD00016B9A /* HTTPCacheClient.swift in Sources */,
 				450DF1BB1E3BEDBD00016B9A /* HTTPRequestGenerator.swift in Sources */,
 				450DF1DC1E3BEDBD00016B9A /* ImageProcessing.swift in Sources */,
+				45A7D9DB1E785DC80072231B /* MultipartTest.swift in Sources */,
 				450DF1661E3BED3D00016B9A /* PinterestHomeTests.swift in Sources */,
 				450DF2121E3BF1F500016B9A /* PinterRestPostTest.swift in Sources */,
 				450DF1BE1E3BEDBD00016B9A /* HTTPResponse.swift in Sources */,

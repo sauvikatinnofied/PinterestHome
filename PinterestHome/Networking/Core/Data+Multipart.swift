@@ -38,6 +38,8 @@ extension Data {
         for item in multipartItems {
             data.appendMultipartItem(item: item, boundary: boundary)
         }
+        // Adding the final Boundary
+        data.appendStringLine(string: "--\(boundary)--")
         self.init(referencing: data as NSData)
     }
     public init?(parameters: JSONDictionary, boundary: String) throws {
@@ -52,22 +54,23 @@ extension Data {
             try data.append(JSONSerialization.data(withJSONObject: value, options: .prettyPrinted))
             data.appendNewLine()
         }
-        
         data.appendStringLine(string: "--\(boundary)--")
+
         self.init(referencing: data as NSData)
         
     }
     mutating func appendMultipartItem(item: MultipartBodyItem, boundary: String) {
         
-        appendString(string: "--\(boundary)")
-        appendNewLine()
+        appendStringLine(string: "--\(boundary)")
         
-        appendStringLine(string: "Content-Type: \(item.mimeType)")
+        appendStringLine(string: "Content-Type: \(item.mimeType.rawValue)")
+        appendNewLine()
         appendStringLine(string: "Content-Length: \(item.data.count)")
         
         for header in item.headers {
             appendStringLine(string: "\(header.key): \(header.requestHeaderValue)")
         }
+        debugPrint("Upload string before upload = \(String(data: self, encoding:.utf8))")
         append(item.data)
         appendNewLine()
     }
